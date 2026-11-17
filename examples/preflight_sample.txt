@@ -1,0 +1,11 @@
+# Sample Manuscript for Preflight Testing
+
+## Introduction
+The evolution of linguistic patterns in academic corpora has been extensively analyzed (Gomez, 2019). However, recent studies suggest conflicting methodologies [1, 2].
+
+## Methods
+We gathered 1,200 abstracts across four disciplines. The evaluation was carried out using automated natural language parsing tools.
+
+## References
+[1] Gomez, A. (2019). Corpus Linguistics in Practice. Academic Press.
+[2] Müller, K. (2021). Multilingual syntax structures. European Journal of Philology.

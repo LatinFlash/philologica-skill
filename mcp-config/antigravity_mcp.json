@@ -1,0 +1,8 @@
+{
+  "philologica": {
+    "server": "https://mcp.philologica.com/v1/agent/mcp",
+    "headers": {
+      "Authorization": "Bearer ${PHILOLOGICA_API_KEY}"
+    }
+  }
+}
