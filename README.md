@@ -121,6 +121,22 @@ Add to `~/.gemini/antigravity/mcp_servers.json` (see `mcp-config/antigravity_mcp
 
 ---
 
+## Troubleshooting
+
+### Windows / Corporate Antivirus SSL Errors (`unable to get local issuer certificate`)
+When installing via `npx skills add LatinFlash/philologica-skill` on Windows systems behind corporate proxies or with SSL inspection antivirus software, Git may fail with `SSL certificate problem: unable to get local issuer certificate`.
+
+Configure Git to use the native Windows Certificate Store (Schannel) instead of OpenSSL:
+```bash
+git config --global http.sslBackend schannel
+```
+Then re-run the installation command:
+```bash
+npx skills add LatinFlash/philologica-skill
+```
+
+---
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
