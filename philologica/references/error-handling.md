@@ -19,7 +19,18 @@ Every tool invocation deducts a fixed number of Philologica Units (PU) based on 
 
 ---
 
-## 2. Standard Error Codes
+## 2. Latency Benchmarks & Zero-Cost Timeout Guarantee
+
+### Typical Response Times
+- **Fast Indexes & Lookups** (`< 1.5s`): Tools relying on direct bibliographic lookups (`citations.verify_reference`, `bibliography.lookup`, `bibliography.normalize`) typically return in under 1.5 seconds.
+- **Deep Semantic & LLM Analysis** (`10–30s`): In-depth inference tools (`citations.check_support`, `arguments.inspect`, `terminology.check`, `fragments.review`, `manuscript.preflight.v2`) execute complex dialectical and contextual analysis with typical durations between 10 and 30 seconds.
+
+### Zero-Cost Timeout Guarantee (`0 PU`)
+If an upstream capability execution exceeds its allocated server timeout or terminates prematurely due to gateway timeouts (`TIMEOUT`), the Philologica Gateway guarantees **0 PU charged**. Metering settlement and balance debits are strictly transactional and execute only upon verified successful responses (`status: 200`). Peticiones interrumpidas por timeout nunca debitan unidades del balance del usuario.
+
+---
+
+## 3. Standard Error Codes
 
 When `isError: true` is returned, the JSON response contains an `error` object with one of the following codes:
 

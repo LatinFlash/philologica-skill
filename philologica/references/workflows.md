@@ -68,3 +68,17 @@ Practical execution guides for integrating Philologica tools into academic editi
 3. **Report Dialectical Leaps**:
    - Highlight claims flagged as `unsupported_leaps`.
    - Formulate constructive bridging statements or hedges to strengthen the paper.
+
+---
+
+## Recommended Two-Step Strategy for Long Manuscripts
+
+When evaluating lengthy papers, monographs, or dissertations, agents should adopt a cost- and latency-optimized **two-step strategy**:
+
+1. **Step 1 — Broad Textual Diagnostic (`manuscript.preflight.v2`)**:
+   - Run a single comprehensive pass on the whole manuscript or main sections.
+   - This deterministically uncovers global anomalies: unreferenced citations, orphan bibliography entries, mixed citation conventions, and hidden Unicode character artifacts across all chapters.
+2. **Step 2 — Targeted Semantic Deep Dive (`citations.check_support` & `arguments.inspect`)**:
+   - Rather than sending entire multi-chapter documents to expensive LLM inference, isolate specific problematic paragraphs or suspect claims flagged in Step 1.
+   - Execute focused verification calls (`citations.check_support` for empirical claims and `arguments.inspect` for controversial discussion passages).
+   - This maximizes analytical precision while keeping latency low and conserving PU credits.

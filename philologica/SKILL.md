@@ -5,7 +5,7 @@ description: Open-source Agent Skill to operate Philologica academic integrity, 
 
 # Philologica Agent Skill
 
-This skill guides intelligent agents in evaluating academic texts, verifying citations, inspecting dialectical arguments, and querying the Philologica evidence graph via the Model Context Protocol (MCP).
+This skill guides intelligent agents in evaluating academic texts, verifying citations, inspecting dialectical arguments, and querying the Philologica evidence graph via the Model Context Protocol (MCP) using a catalog of **16 production tools**.
 
 ## Onboarding & Setup
 

@@ -110,6 +110,8 @@ Add to `~/.gemini/antigravity/mcp_servers.json` (see `mcp-config/antigravity_mcp
 
 ## Available Workflows
 
+The skill provides access to Philologica's complete catalog of **16 specialized MCP tools**, structured across stateless editorial audits and persistent evidence graphs:
+
 | Scenario | Primary Tool | When to Use |
 | :--- | :--- | :--- |
 | **Check Claim Support** | `citations.check_support` | Verify if a specific text excerpt supports an academic claim |
